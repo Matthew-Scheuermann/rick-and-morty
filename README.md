@@ -6,19 +6,20 @@ A small practice project using the free [Rick and Morty API](https://rickandmort
 
 ### Part 1: Setup & Skeleton (~15 min)
 
-- Create `index.html`, `style.css`, and `script.js` in one folder.
-- Link `style.css` in the `<head>` and `script.js` (with `defer`) near the end of `<body>`.
-- Build two sections directly in `index.html`:
+<!-- - Create `index.html`, `style.css`, and `script.js` in one folder. -->
+<!-- - Link `style.css` in the `<head>` and `script.js` (with `defer`) near the end of `<body>`. -->
+<!-- - Build two sections directly in `index.html`:
   - `#home-view` — contains an empty `<ul id="characters"></ul>`
-  - `#detail-view` — contains empty placeholder elements for name, image, species, and status, plus a `<button id="back">Back</button>`
-- Add a `.hidden { display: none; }` class in your CSS, and apply it to `#detail-view` by default so only the home view shows on load.
+  - `#detail-view` — contains empty placeholder elements for name, image, species, and status, plus a `<button id="back">Back</button>` -->
+<!-- - Add a `.hidden { display: none; }` class in your CSS, and apply it to `#detail-view` by default so only the home view shows on load. -->
 
 ### Part 2: JavaScript & Core Functionality (~45-60 min)
 
-- Create a `state` object with a `selectedCharacter` property (starts as `null`).
-- Fetch the character list from `https://rickandmortyapi.com/api/character`.
-  - The response is shaped like `{ results: [...] }` — an array of character objects (`id`, `name`, `image`, `species`, `status`).
-- Render each character's name as an `<li>` inside `#characters`, storing each one's `id` as a `data-id` attribute.
+<!-- - Create a `state` object with a `selectedCharacter` property (starts as `null`). -->
+<!-- - Fetch the character list from `https://rickandmortyapi.com/api/character`. -->
+  <!-- - The response is shaped like `{ results: [...] }` — an array of character objects (`id`, `name`, `image`, `species`, `status`). -->
+<!-- - Render each character's name as an `<li>` inside `#characters`, storing each one's `id` as a `data-id` attribute. -->
+
 - Add a click listener on `#characters` (event delegation — one listener on the `<ul>`, not on each `<li>`).
   - On click, read the clicked item's `id`.
   - Fetch that single character from `https://rickandmortyapi.com/api/character/{id}`.

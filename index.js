@@ -14,7 +14,7 @@ const getCharacters = async () => {
     state.characters = result.results;
     characterList.innerHTML = state.characters
       .map((character) => {
-        return `<li>${character.name}</li>`;
+        return `<li data-id = "${character.id}">${character.name}</li>`;
       })
       .join(" ");
   } catch (error) {
